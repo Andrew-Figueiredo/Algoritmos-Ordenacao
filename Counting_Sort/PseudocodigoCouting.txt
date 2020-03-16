@@ -1,0 +1,14 @@
+couting-Sort(vetor, saida, k):
+
+	enquanto i <- o até k 
+		faça saida[i] <- 0
+
+	enquanto j <- 1 até Tamanho[vetor]
+		faça aux[vetor[j]] <- aux[vetor[j]] + 1
+	
+	enquanto i <- 1 até k
+		faça aux [ i ] <- aux[i] + aux[i-1]
+
+	enquanto j <- tamanho[vetor] decrescendo até 1
+		faça saida[aux[vetor[j]]] <- vetor[j]
+		aux[vetor[j]] <- aux[vetor[j]] -1 

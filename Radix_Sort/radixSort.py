@@ -31,7 +31,7 @@ def radixSort(vetor):
 
 if __name__ == "__main__":
 
-    vetor = [170, 45, 75, 90, 802, 24, 2, 66]
+    vetor = [9, 5, 2, 3, 1 ,0, 7, 13, 10]
     print("Vetor desordenado: " + str(vetor) )
     print()
     radixSort(vetor)
